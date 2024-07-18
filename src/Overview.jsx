@@ -1,70 +1,78 @@
 import { useState } from "react";
 
+import fbImg from "./assets/images/icon-facebook.svg";
+import twitterImg from "./assets/images/icon-twitter.svg";
+import instaImg from "./assets/images/icon-instagram.svg";
+import youtubeImg from "./assets/images/icon-youtube.svg";
+
+import upImg from "./assets/images/icon-up.svg";
+import downImg from "./assets/images/icon-down.svg";
+
 const Overview = ({isDarkMode}) => {
 
     const [overviewCard, setOverviewCards] = useState([
         {
             id: 1,
-            img: require( "./src/assets/images/icon-facebook.svg").default,
+            img: fbImg,
             page: "page views",
             views: 87,
-            imgUpDown: require("./src/assets/images/icon-up.svg").default,
+            imgUpDown: upImg,
             pre: 3,
         },
         {
             id: 2,
-            img: require("./src/assets/images/icon-facebook.svg").default,
+            img: fbImg,
             page: " Likes",
             views: 52,
-            imgUpDown: require("./src/assets/images/icon-down.svg").default,
+            imgUpDown: downImg,
             pre: 2,
         },
         {
             id: 3,
-            img: require("./src/assets/images/icon-instagram.svg").default,
+            img: instaImg,
             page: " Likes",
             views: 5462,
-            imgUpDown: require("./src/assets/images/icon-up.svg").default,
+            imgUpDown: upImg,
             pre: 2257,
         },
         {
             id: 4,
-            img: require("./src/assets/images/icon-instagram.svg").default,
+            img: instaImg,
             page: "profile views",
             views: "52K",
-            imgUpDown: require("./src/assets/images/icon-up.svg").default,
+            imgUpDown: upImg,
             pre: 1375,
         },
         {
             id: 5,
-            img: require("./src/assets/images/icon-twitter.svg").default,
+            img: twitterImg,
             page: "Retweets",
             views: 117,
-            imgUpDown: require("./src/assets/images/icon-up.svg").default,
+            imgUpDown: upImg,
             pre: 303,
         },
         {
             id: 6,
-            img: require("./src/assets/images/icon-twitter.svg").default,
+            img: twitterImg,
             page: "Retweets",
             views: 507,
-            imgUpDown: require("./src/assets/images/icon-up.svg").default,
+            imgUpDown: upImg,
             pre: 553,
         },
         {
             id: 7,
-            img: require("./src/assets/images/icon-youtube.svg").default,
+            img: youtubeImg,
             page: "likes",
             views: 107,
-            imgUpDown: require("./src/assets/images/icon-down.svg").default,
+            imgUpDown: downImg,
             pre: 19,
         },
         {
             id: 8,
-            img: require("./src/assets/images/icon-youtube.svg").default,
+            img: youtubeImg,
             page: "Total views",
             views: 1407,
-            imgUpDown: require("./src/assets/images/icon-down.svg").default,
+            imgUpDown: downImg,
             pre: 12,
         }
     ]);

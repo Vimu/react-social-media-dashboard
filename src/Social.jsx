@@ -1,42 +1,52 @@
 import React, { useState } from "react";
+import fbIcon from "./assets/images/icon-facebook.svg";
+import twitterIcon from "./assets/images/icon-twitter.svg";
+import instaIcon from "./assets/images/icon-instagram.svg";
+import youtubeIcon from "./assets/images/icon-youtube.svg";
+
+import upIcon from "./assets/images/icon-up.svg";
+import downIcon from "./assets/images/icon-down.svg";
+
+
+
 const Social = ({isDarkMode}) => {
 
 const [cards, setCars] = useState([
     {
         id: 1,
         name: "@nathanf",
-        socialImg:require("./src/assets/images/icon-facebook.svg").default,
+        socialImg: fbIcon,
         count: 1987,
         followers: "followers",
         today: 12,
-        countImg: require("./src/assets/images/icon-up.svg").default
+        countImg: upIcon
     },
     {
         id: 2,
         name: "@nathanf",
-        socialImg: require("./src/assets/images/icon-twitter.svg").default,
+        socialImg: twitterIcon,
         count: 1044,
         followers: "followers",
         today: 99,
-        countImg: require("./src/assets/images/icon-up.svg").default
+        countImg:upIcon
     },
     {
         id: 3,
         name: "@realnathanf",
-        socialImg: require("./src/assets/images/icon-instagram.svg").default,
+        socialImg: instaIcon,
         count: "11k",
         followers: "followers",
         today: 1099,
-        countImg: require("./src/assets/images/icon-up.svg").default
+        countImg: upIcon
     },
     {
         id: 4,
         name: "Nathan F.",
-        socialImg: require("./src/assets/images/icon-youtube.svg").default,
+        socialImg: youtubeIcon,
         count: 8239,
         followers: "subscribers",
         today: 144,
-        countImg: require("./src/assets/images/icon-down.svg").default
+        countImg: downIcon
     },
 ]);
 
