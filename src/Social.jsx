@@ -5,38 +5,38 @@ const [cards, setCars] = useState([
     {
         id: 1,
         name: "@nathanf",
-        socialImg: "./src/assets/images/icon-facebook.svg",
+        socialImg:require("./src/assets/images/icon-facebook.svg").default,
         count: 1987,
         followers: "followers",
         today: 12,
-        countImg: "./src/assets/images/icon-up.svg"
+        countImg: require("./src/assets/images/icon-up.svg").default
     },
     {
         id: 2,
         name: "@nathanf",
-        socialImg: "./src/assets/images/icon-twitter.svg",
+        socialImg: require("./src/assets/images/icon-twitter.svg").default,
         count: 1044,
         followers: "followers",
         today: 99,
-        countImg: "./src/assets/images/icon-up.svg"
+        countImg: require("./src/assets/images/icon-up.svg").default
     },
     {
         id: 3,
         name: "@realnathanf",
-        socialImg: "./src/assets/images/icon-instagram.svg",
+        socialImg: require("./src/assets/images/icon-instagram.svg").default,
         count: "11k",
         followers: "followers",
         today: 1099,
-        countImg: "./src/assets/images/icon-up.svg"
+        countImg: require("./src/assets/images/icon-up.svg").default
     },
     {
         id: 4,
         name: "Nathan F.",
-        socialImg: "./src/assets/images/icon-youtube.svg",
+        socialImg: require("./src/assets/images/icon-youtube.svg").default,
         count: 8239,
         followers: "subscribers",
         today: 144,
-        countImg: "./src/assets/images/icon-down.svg"
+        countImg: require("./src/assets/images/icon-down.svg").default
     },
 ]);
 
